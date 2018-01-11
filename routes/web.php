@@ -11,5 +11,22 @@
 |
 */
 
-Route::view("/", "pages/index")->name("home");
-Route::view("/about", "pages/about")->name("about");
+# Method 1
+// Route::view("/", "pages/index")->name("home");
+// Route::view("about", "pages/about");
+//Route::view("contact", "pages/contact")->name("contact");
+
+# Method 2
+// Route::get('about', function () {
+// 	return view('pages/about');
+
+// });
+
+
+# Method 3
+
+Route::get('contact', 'PagesController@getContact');
+Route::get('about', 'PagesController@getAbout');
+Route::get('/', 'PagesController@getIndex');
+
+
