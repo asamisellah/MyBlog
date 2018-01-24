@@ -1,0 +1,75 @@
+body{
+	background-color: white;
+
+}
+
+.slide-in-top {
+	-webkit-animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+header{
+	/*background: linear-gradient(to bottom right, #24c0eb 14%, #ba01ff 120%); */
+	background-image: url("/images/brick-wall-dark.png");
+	height: 100%;
+
+	animation-name: colour-switch;
+	animation-duration: 12s;
+	animation-iteration-count: infinite;
+	z-index: -200; 
+}
+@keyframes colour-switch {
+	0%   {background-color: #bbf00e;}
+    25%  {background-color: #930eeb;}
+    50%  {background-color: #0edaf5;}
+    100% {background-color: #f5e20e;}
+}
+
+nav{
+	height: 150px;
+}
+
+header .navbar{
+	
+}
+
+#headercontent{
+	padding: 100px 10px 305px 10px;
+
+}
+
+#headercontent h1{
+	font-family: 'Coustard', serif;
+	font-size: 100px;
+
+}
+
+.content section{
+	height: 800px;
+	padding-top: 40px;
+}
+
+#signin{
+	padding-top: 50px;
+	height: 400px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("/images/bank_box2.png");
+
+    /* Set a specific height */
+    height: 600px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    z-index: -300;
+}
+
+footer{
+	height: 400px;
+}

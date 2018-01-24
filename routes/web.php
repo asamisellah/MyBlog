@@ -12,9 +12,11 @@
 */
 
 # Method 1
-// Route::view("/", "pages/index")->name("home");
-// Route::view("about", "pages/about");
-//Route::view("contact", "pages/contact")->name("contact");
+Route::view("/", "pages/index")->name("home");
+Route::view("about", "pages/about")->name("about");
+Route::view("dashboard", "pages/dashboard")->name("dashboard");
+Route::view("goals", "pages/goals")->name("goals");
+Route::view("creategoals", "pages/creategoals")->name("creategoals") ;
 
 # Method 2
 // Route::get('about', function () {
@@ -25,8 +27,10 @@
 
 # Method 3
 
-Route::get('contact', 'PagesController@getContact');
-Route::get('about', 'PagesController@getAbout');
-Route::get('/', 'PagesController@getIndex');
+// Route::get('dashboard', 'PagesController@getDashboard');
+// Route::get('about', 'PagesController@getAbout');
+// Route::get('/', 'PagesController@getIndex');
 
 
+// Route for controllers
+Route::resource('posts', 'AccountController');

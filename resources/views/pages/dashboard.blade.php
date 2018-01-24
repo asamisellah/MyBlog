@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
-	
-</body>
-</html>
+@extends('layouts.mmain') 
+@section('title','Dashboard')
+
+@section('content')
+
+	<h1></h1>
+
+@endsection

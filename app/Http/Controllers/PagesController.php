@@ -28,8 +28,8 @@ namespace App\Http\Controllers;
  		// return view('pages/about')->withFullname($fullname)->withEmail($email);
  	}
 
- 	public function getContact(){
- 		return view('pages/contact');
+ 	public function getDashboard(){
+ 		return view('pages/dashboard');
  		#return "Hello Contact Page";
  	}
 
